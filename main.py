@@ -1,12 +1,8 @@
-a=2323
-print(a)
-b="jarif"
-print(b)
-c=True
-print(c)
-d=None
-print(d)
-print("type of a is :", type(a))
-print("type of b is :",type(b))
-print("type of c is :",type(c))
-print("type of d is :",type(d))
+a=50
+b=20
+print("the addition of a and b is :",a+b)
+print("the subtraction of a and b is :",a-b)
+print("the multiplication of a and b is :",a*b)
+print("the division of a and b is :",a/b)
+print("if the power of a is b is :",a**b)
+print("the remainder of a and b is :",a%b)
