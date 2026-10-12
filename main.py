@@ -1,8 +1,6 @@
-a=50
-b=20
-print("the addition of a and b is :",a+b)
-print("the subtraction of a and b is :",a-b)
-print("the multiplication of a and b is :",a*b)
-print("the division of a and b is :",a/b)
-print("if the power of a is b is :",a**b)
-print("the remainder of a and b is :",a%b)
+a="1"
+b="2"
+print(int(a)+int(b))
+print(a+b)
+print(float(a))
+print(complex(b))
