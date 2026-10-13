@@ -1,3 +1,7 @@
-a=int(input("Enter 1st valueL:"))
-b=int(input("Enter 2nd value:"))
-print("the sumation is : ",a+b)
+name="jarif"
+department="computer"
+details="""my favorite food is appel.
+it is very testy"""
+print("my name is",name,"and my department is",department)
+print(f"{details}")
+print(f"{details[4]}")
