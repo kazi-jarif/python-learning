@@ -1,13 +1,23 @@
-import time
-current_time= time.strftime("%H:%M:%S")
+name="jarif"
+for i in name:
+    print(i)
+    if i=="r":
+        print("this is \"r\" ")
 
-if current_time>"05:00:00" and current_time<"12:00:00":
-    print("good morning sir")
-elif current_time>"12:00:00" and current_time<"15:00:00":
-    print("good noon")
-elif current_time>"15:00:00" and current_time<"18:00:00":
-    print("good afternoon")
-elif current_time>"18:00:00" and current_time<"20:00:00":
-    print("good evening")
-else:
-    print("good night")
+
+color=["red","green","pink"]
+for c in color:
+    print(c)
+    for i in c:
+        print(i)
+
+
+k=0
+for i in range(5):
+    print(i+1)
+
+for j in range(0,100):
+    print(j+1)
+
+for l in range(-20,100,20):
+    print(l+20)
