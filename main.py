@@ -1,16 +1,29 @@
-def calculategmean(a,b):
-    if a>b:
-        print("1st number is greater")
-    elif a<b:
-        print("2nd number is greater ")
-    else:
-        print("both are equal")
-    gmean=(a*b)/(a+b)
-    print(gmean)
-    
-calculategmean(9,8)
-calculategmean(8,10)
+#default argument
+def names(sirname="kazi",name="jarif"):
+    print("the name is",sirname , name)
+names(name="rana")
+names()
+names(name="rakib")
 
 
 
+#Arbitrary Positional Arguments
+def average(*num):
+    #num named tupple has been created with peramitter number.Like (2,3).
+    sum=0
+    for i in num:
+        sum=sum+i
+    print(sum/len(num))
+average(2,3)
 
+
+
+#return statement
+def average(*num):
+    #num named tupple has been created with peramitter number.Like (2,3).
+    sum=0
+    for i in num:
+        sum=sum+i
+    return (sum/len(num))
+c=average(2,3)
+print(c)
