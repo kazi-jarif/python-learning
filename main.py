@@ -1,29 +1,18 @@
-#default argument
-def names(sirname="kazi",name="jarif"):
-    print("the name is",sirname , name)
-names(name="rana")
-names()
-names(name="rakib")
+list=[1,33,4,5,"name",True]
+print(type(list))
+print(list)
+print(list[0])
+if 33 in list:
+    print("yes")
+else:
+    print("no")
+print(list[0:3])
 
 
+#list comprehension
+lst=[i for i in range(10) if i%2==0]
+print(lst)
 
-#Arbitrary Positional Arguments
-def average(*num):
-    #num named tupple has been created with peramitter number.Like (2,3).
-    sum=0
-    for i in num:
-        sum=sum+i
-    print(sum/len(num))
-average(2,3)
-
-
-
-#return statement
-def average(*num):
-    #num named tupple has been created with peramitter number.Like (2,3).
-    sum=0
-    for i in num:
-        sum=sum+i
-    return (sum/len(num))
-c=average(2,3)
-print(c)
+item=["rana","alif",'lima']
+l_items=[l_items_list for l_items_list in item if "l" in l_items_list]
+print(l_items)
