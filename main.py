@@ -1,24 +1,16 @@
-for i in range(10):
-    if (i+1)==5:
-        break
+def calculategmean(a,b):
+    if a>b:
+        print("1st number is greater")
+    elif a<b:
+        print("2nd number is greater ")
     else:
-        print("5 X ",i+1,"=",5*(i+1))
-print("it will end in 5")
-
-
-
-for i in range(10):
-    if (i+1)==5:
-        continue
-    print("5 X ",i+1,"=",5*(i+1))
-print("it will ignore in 5")
-
-
-
-i=0
-while True:
-    i=i+1
-    if i%10==0:
-        continue
-    print(i)
+        print("both are equal")
+    gmean=(a*b)/(a+b)
+    print(gmean)
     
+calculategmean(9,8)
+calculategmean(8,10)
+
+
+
+
