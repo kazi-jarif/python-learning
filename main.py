@@ -1,18 +1,20 @@
-list=[1,33,4,5,"name",True]
-print(type(list))
+list=[11,2,4,5]
+list.append(7)
+list.sort()
+list.reverse()
 print(list)
-print(list[0])
-if 33 in list:
-    print("yes")
-else:
-    print("no")
-print(list[0:3])
+print(list.index(2))
+print(list.count(2))
 
+m=list.copy()
+m.append(10)
+print(m)
+m.insert(1,899)
+print(m)
 
-#list comprehension
-lst=[i for i in range(10) if i%2==0]
-print(lst)
+s=[4334,3434,343]
+m.extend(s)
+print(m)
 
-item=["rana","alif",'lima']
-l_items=[l_items_list for l_items_list in item if "l" in l_items_list]
-print(l_items)
+k=m+list
+print(k)
