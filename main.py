@@ -1,22 +1,18 @@
-def docs():
-    '''the gen of python: Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those! '''
-print(docs.__doc__)
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+n=int(input("enter the number : "))
+print(factorial(n))
 
+
+def fibanachi(fn):
+    if fn==0 or fn==1:
+        return fn
+    else:
+        ans=fibanachi(fn-1)+fibanachi(fn-2)
+        return ans
+fn=int(input("enter the number : "))
+for i in range(int(fn+1)):
+    print(fibanachi(i), end=" ")
