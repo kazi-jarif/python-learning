@@ -1,18 +1,9 @@
-def factorial(n):
-    if n==0 or n==1:
-        return 1
-    else:
-        return n*factorial(n-1)
-n=int(input("enter the number : "))
-print(factorial(n))
+s={2,4,2,5}
+print(s)
 
-
-def fibanachi(fn):
-    if fn==0 or fn==1:
-        return fn
-    else:
-        ans=fibanachi(fn-1)+fibanachi(fn-2)
-        return ans
-fn=int(input("enter the number : "))
-for i in range(int(fn+1)):
-    print(fibanachi(i), end=" ")
+#emty set
+s1=set()
+print(type(s1))
+#incorrect way --
+s1={}
+print(type(s1))
