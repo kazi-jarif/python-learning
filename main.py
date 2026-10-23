@@ -1,9 +1,24 @@
-s={2,4,2,5}
-print(s)
+s1={1,2,3,4}
+s2={3,4,5,6}
+print(s1.union(s2))
+print(s1.intersection(s2))
+print(s1.symmetric_difference(s2))
 
-#emty set
-s1=set()
-print(type(s1))
-#incorrect way --
-s1={}
-print(type(s1))
+s1.update(s2)
+print(s1)
+
+s1.intersection_update(s2)
+print(s1)
+
+print(s1.isdisjoint(s2))
+print(s1.issuperset(s2))
+print(s1.issubset(s2))
+
+s2.remove(6)
+print(s2)
+
+s2.clear()
+print(s2)
+
+del s1
+print(s1)
